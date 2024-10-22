@@ -1,0 +1,375 @@
+* {
+  font-family: monospace, Helvetica, sans-serif;
+  line-height: 1.5; 
+  font-size: 17px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Warna latar belakang yang lebih lembut */
+}
+
+.layar-dalam {
+  max-width: 1000px; /* Membatasi lebar agar responsif */
+  margin: auto;
+}
+
+.layar-penuh {
+  width: 100%;
+}
+
+nav {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid #b1b1b1;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease;
+  background-color: rgba(24, 24, 24, 0.7); /* Transparansi untuk latar belakang navbar */
+}
+
+nav .logo {
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
+}
+
+nav .logo img {
+  vertical-align: middle;
+  width: 120px;
+}
+
+nav .menu {
+  float: right;
+  height: 60px;
+}
+
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Memusatkan item secara horizontal */
+  align-items: center; /* Memusatkan item secara vertikal */
+}
+
+nav .menu ul li {
+  list-style-type: none;
+  line-height: 100px;
+}
+
+nav ul li a {
+  list-style-type: none;
+  color: #fff;
+  text-align: center;
+  padding: 0 16px;
+  text-decoration: none;
+  transition: color 0.3s; /* Efek transisi pada hover */
+}
+
+nav ul li a:hover {
+  color: #c86b85; /* Warna hover */
+}
+
+.custom-login-button {
+  background-color: #ff6347; /* Warna background */
+  color: white; /* Warna teks */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.custom-login-button:hover {
+  background-color: #ff4500; /* Warna background saat hover */
+  color: #fff;
+}
+
+/* Pengaturan header */
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+header .intro {
+  z-index: 2; /* Pastikan lebih besar dari overlay dan gambar */
+  color: #fff;
+  text-align: center;
+  position: absolute; /* Diubah dari relative */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+header .intro h3 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.tombol {
+  background-color: #c86b85;
+  height: 40px;
+  line-height: 40px; /* Menyelaraskan tinggi tombol */
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Transisi saat hover */
+}
+
+.tombol:hover {
+  background-color: #b55d6b; /* Warna tombol saat hover */
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Ubah dari opacity ke rgba untuk transparansi yang lebih baik */
+  z-index: 1; /* Harus lebih kecil dari .intro */
+}
+
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.tombol-menu .garis {
+  height: 3px;
+  background-color: #fff;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section h3 {
+  font-size: 30px;
+}
+
+section h3::after {
+  content: "";
+  border-bottom: 5px solid #c86b85;
+  width: 52px;
+  display: block;
+  margin: 20px auto;
+}
+
+#aboutus,
+#products {
+  text-align: center;
+}
+
+section p.ringkasan {
+  font-style: italic;
+  font-size: 18px;
+  color: #ababab;
+}
+
+section .konten-isi p {
+  font-style: normal;
+}
+
+nav.putih {
+  background-color: #000000;
+}
+
+nav.putih .tombol-menu .garis {
+  background-color: #333;
+}
+
+nav.putih ul li a {
+  color: #ffffff;
+}
+
+nav .logo img.hitam {
+  display: none;
+}
+
+section.abuabu {
+  background-color: #afafaf;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap; /* Menyusun card dalam beberapa baris */
+  justify-content: space-between; /* Memberikan ruang antara card */
+}
+
+.products .area {
+  width: 40%; /* Mengubah lebar card agar lebih lebar */
+  margin: 15px; /* Menambahkan jarak antara card */
+  box-shadow: 0px -10px 30px #696969;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.products div.area div {
+  width: 50%;
+}
+
+.products .area .gambar {
+  border-radius: 5px 0px 0px 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 250px; /* Mengatur lebar gambar */
+}
+
+.products .area .text article {
+  padding: 10px; /* Mengurangi padding untuk memberi lebih banyak ruang */
+}
+
+.products .area .text article h4 {
+  margin: 0;
+}
+
+.products .area .text article a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.products .area .text article a:hover {
+  color: #ccc;
+}
+
+@media screen and (max-width: 991.98px) {
+  .products .area {
+    width: 100%; /* Membuat card menjadi penuh pada layar kecil */
+    margin: 10px 0; /* Menambahkan margin vertikal */
+  }
+
+  .products .area .gambar {
+    border-radius: 5px 5px 0 0;
+    height: 200px; /* Mengatur ukuran gambar untuk responsivitas */
+  }
+}
+
+
+.products .area .text article {
+  padding: 10px; /* Anda bisa mengurangi padding untuk memberi lebih banyak ruang */
+}
+
+.products .area .text article h4 {
+  margin: 0;
+}
+
+.products .area .text article a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.products .area .text article a:hover {
+  color: #ccc;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: #26282b;
+  color: #fff;
+}
+
+footer .layar-dalam {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .layar-dalam div {
+  width: 20%;
+}
+
+footer .layar-dalam h5 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .layar-dalam .copyright {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #383838;
+  text-align: center;
+}
+
+@media screen and (max-width: 991.98px) {
+  .layar-dalam {
+    width: 90%;
+  }
+
+  nav .menu ul {
+    display: none;
+    margin-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  nav .menu ul li {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 40px;
+  }
+
+  nav .menu ul li a {
+    color: #272727;
+  }
+
+  .tombol-menu {
+    display: flex;
+  }
+
+  .products .area {
+    display: block;
+  }
+
+  .products div.area div {
+    width: 100%;
+  }
+
+  .products .area .gambar {
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+  }
+
+  .support {
+    display: block;
+  }
+
+  .support div {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
