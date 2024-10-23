@@ -17,9 +17,20 @@
     
     <style>
         body {
-            background: linear-gradient(to right, #4a90e2, #6ab04c); /* Latar belakang gradien */
             color: #333; /* Warna teks utama */
             font-family: 'Montserrat', sans-serif; /* Font yang digunakan */
+        }
+
+        .img {
+            background-image:  url('{{ asset('img/acer.avif') }}') ; /* Pastikan path benar */
+            background-size: cover; /* Mengatur gambar untuk menutupi seluruh halaman */
+            background-position: center; /* Memusatkan gambar */
+            position: fixed; /* Memastikan gambar tetap di belakang */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; /* Mengatur tinggi menjadi 100% */
+            z-index: -1; /* Memastikan gambar di belakang elemen lain */
         }
 
         .login-box {
@@ -74,6 +85,7 @@
     </style>
 </head>
 <body class="hold-transition login-page">
+    <div class="img"></div> <!-- Menambahkan elemen untuk gambar latar belakang -->
     <div class="login-box">
         <div class="card card-outline card-primary">
             <div class="card-header text-center">

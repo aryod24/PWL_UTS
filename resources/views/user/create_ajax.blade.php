@@ -34,15 +34,6 @@
                     <input value="" type="password" name="password" id="password" class="form-control" required>
                     <small id="error-password" class="error-text form-text text-danger"></small>
                 </div>
-
-                <div class="form-group">
-                    <label>Foto</label>
-                    <input type="file" name="foto" id="foto" class="form-control"
-                        accept=".png,.jpg,.jpeg">
-                    <small class="form-text text-muted">Abaikan jika tidak ingin ubah foto</small>
-                    <small id="error-foto" class="error-text form-text text-danger"></small>
-                </div>
-
             </div>
             <div class="modal-footer">
                 <button type="button" data-dismiss="modal" class="btn btn-warning">Batal</button>
@@ -75,9 +66,6 @@
                     minlength: 6,
                     maxlength: 20
                 },
-                foto: {
-                    accept: "png,jpg,jpeg"
-                }
             },
             submitHandler: function(form) {
                 var formData = new FormData(

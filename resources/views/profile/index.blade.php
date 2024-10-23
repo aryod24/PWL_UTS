@@ -68,7 +68,7 @@
             --secondary-color: #f0f0f0;
             --text-color: #333;
             --hover-color: #ff6347;
-            --header-bg-color: linear-gradient(135deg, #ff7f50, #445688);
+            --header-bg-color: linear-gradient(135deg, #5a90f3, #445688);
         }
 
         body {

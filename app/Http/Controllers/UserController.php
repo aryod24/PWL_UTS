@@ -210,7 +210,6 @@ public function store_ajax(Request $request)
             'username' => 'required|string|min:3|unique:m_user,username',
             'nama'     => 'required|string|max:100',
             'password' => 'required|min:5',
-            'foto'     => 'nullable|image|mimes:jpeg,png,jpg|max:2048'
         ];
 
         // use Illuminate\Support\Facades\Validator
@@ -279,7 +278,6 @@ public function store_ajax(Request $request)
                 'username' => 'required|max:20|unique:m_user,username,' . $id . ',user_id',
                 'nama' => 'required|max:100',
                 'password' => 'nullable|min:5|max:20',
-                'foto'     => 'nullable|image|mimes:jpeg,png,jpg|max:2048'
             ];
             
             // use Illuminate\Support\Facades\Validator;

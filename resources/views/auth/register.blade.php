@@ -17,7 +17,9 @@
 
     <style>
         body {
-            background: linear-gradient(to right, #4a90e2, #6ab04c); /* Latar belakang gradien */
+            background-image: url('{{ asset('img/acer.avif') }}'); /* Latar belakang gambar */
+            background-size: cover; /* Menyesuaikan gambar dengan ukuran layar */
+            background-repeat: no-repeat; /* Menghindari pengulangan gambar */
             color: #333; /* Warna teks utama */
             font-family: 'Montserrat', sans-serif; /* Font yang digunakan */
         }

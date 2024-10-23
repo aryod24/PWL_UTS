@@ -1,8 +1,7 @@
 <nav>
-    <div class="layar-dalam">
+    <div class="layar">
       <div class="logo">
-        <a href=""><img src="asset/logolaptops.png" class="putih" /></a>
-        <a href=""><img src="asset/logolaptops.png" class="hitam" /></a>
+        <a href=""><img src="asset/logolaptops.png"/></a>
       </div>
       <div class="menu">
         <a href="#" class="tombol-menu">
@@ -26,7 +25,7 @@
           <h3>LaptopS</h3>
           <p>Jual Beli Laptop Terpercaya</p>
           <p>
-            <a href="" class="tombol">MORE INFO</a>
+            <a href="" class="tombol">More Info</a>
           </p>
         </div>
       </header>
